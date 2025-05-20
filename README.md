@@ -210,7 +210,7 @@ Detailed results comparing the test case pass ratios of various LLMs:
 <table>
   <tr>
     <td align="center" colspan="2">
-      <img src="./figures/Python_Construct_v2_png_compressed.png" alt="Python Infill & Completion" style="width: 100%; height: auto;"/><br>
+      <img src="./figures/Python_Construct_v2_jpeg.jpg" alt="Python Infill & Completion" style="width: 100%; height: auto;"/><br>
       <em>Figure 4: Python Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
