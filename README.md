@@ -7,12 +7,12 @@
 🤔*Question: Can an AI tool correctly complete code snippets like `method body`, `if-statements`, or `for-loops` from real-world projects?*
 
 
-<!-- <p align="center">
+<p align="center">
   <img src="./figures/SimCoPilot_hd.gif" alt="SimCoPilot Demo"/><br>
-  <em>SimCoPilot Demo</em>
-</p> -->
-**SimCoPilot Demo**
-![Figure 2: SimCoPilot Demo](./figures/SimCoPilot_hd.gif)
+  <em>Figure 2: SimCoPilot Demo</em>
+</p>
+<!-- **SimCoPilot Demo**
+![Figure 2: SimCoPilot Demo](./figures/SimCoPilot_hd.gif) -->
 
 
 **Why SimCoPilot?**
@@ -191,55 +191,55 @@ For detailed examples of code Post-Processing, please refer to the figure below:
 Detailed results comparing the test case pass ratios of various LLMs:  
 - Categorized by models and different programming constructs: [code](helper_functions/code_gen_result_display.ipynb)
 
-![Figure 4: Python Infill & Completion - Pass Rates by Program Constructs](./figures/Python_Construct_v2_jpeg.jpg)
+<!-- ![Figure 4: Python Infill & Completion - Pass Rates by Program Constructs](./figures/Python_Construct_v2_jpeg.jpg)
 *Figure 4: Python Infill & Completion - Pass Rates by Program Constructs*
 
 ![Figure 5: Java Infill & Completion - Pass Rates by Program Constructs](./figures/Java_Construct_v2_jpeg.jpg)
-*Figure 5: Java Infill & Completion - Pass Rates by Program Constructs*
-<!-- <table>
+*Figure 5: Java Infill & Completion - Pass Rates by Program Constructs* -->
+<table>
   <tr>
     <td align="center" colspan="2">
       <img src="./figures/Python_Construct_v2_jpeg.jpg" alt="Python Infill & Completion" style="width: 100%; height: auto;"/><br>
-      <em>Python Infill & Completion</em>
+      <em>Figure 4: Python Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
       <img src="./figures/Java_Construct_v2_jpeg.jpg" alt="Java Infill & Completion" style="width: 100%; height: auto;"/><br>
-      <em>Java Infill & Completion</em>
+      <em>Figure 5: Java Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
-</table> -->
+</table>
 
 <!-- <p align="center">
   <em>Pass Rates by Program Constructs</em>
-</p> -->
+</p>
 
 - Categorized by distance to the nearest referenced object: [code](helper_functions/horizon_dist.ipynb)
 
-<!-- <p align="center">
+<p align="center">
     <img src="./figures/Pass_rate_group_by_ref_dist_w_errbar_compressed_jpeg.jpg" alt="Pass Rates by Distance to Referenced Object"/><br>
-    <em>Pass Rates by Distance to Referenced Object</em>
-</p> -->
-![Figure 6: Pass Rates by Distance to Referenced Object](./figures/Pass_rate_group_by_ref_dist_w_errbar_compressed_jpeg.jpg)
-*Figure 6: Pass Rates by Distance to Referenced Object*
+    <em>Figure 6: Pass Rates by Distance to Referenced Object</em>
+</p>
+<!-- ![Figure 6: Pass Rates by Distance to Referenced Object](./figures/Pass_rate_group_by_ref_dist_w_errbar_compressed_jpeg.jpg)
+*Figure 6: Pass Rates by Distance to Referenced Object* -->
 
 - Categorized by proximity to the nearest comments: [code](helper_functions/get_comment_dist.ipynb)
 
-<!-- <p align="center">
+<p align="center">
   <img src="./figures/group_by_comment_dist_w_errbar_compressed_jpeg.jpg" alt="Pass Rates by Distance to Closest Comment"/><br>
-  <em>Pass Rates by Distance to Closest Comment</em>
-</p> -->
-![Figure 7: Pass Rates by Distance to Closest Comment](./figures/group_by_comment_dist_w_errbar_compressed_jpeg.jpg)
-*Figure 7: Pass Rates by Distance to Closest Comment*
+  <em>Figure 7: Pass Rates by Distance to Closest Comment</em>
+</p>
+<!-- ![Figure 7: Pass Rates by Distance to Closest Comment](./figures/group_by_comment_dist_w_errbar_compressed_jpeg.jpg)
+*Figure 7: Pass Rates by Distance to Closest Comment* -->
 
 - Error Analysis
-<!-- <p align="center">
+<p align="center">
   <img src="./figures/Error_Analysis_compressed_600_jpeg.jpg" alt="Error Analysis"/><br>
-  <em>Cumulative Output by Category</em>
-</p> -->
-![Figure 8: Cumulative Output by Category](./figures/Error_Analysis_compressed_600_jpeg.jpg)
-*Figure 8: Cumulative Output by Category*
+  <em>Figure 8: Cumulative Output by Category</em>
+</p>
+<!-- ![Figure 8: Cumulative Output by Category](./figures/Error_Analysis_compressed_600_jpeg.jpg)
+*Figure 8: Cumulative Output by Category* -->
 
 - **Model Size vs. Error Rates:** Larger or more sophisticated models generally have fewer errors but don't consistently show lower error rates across all categories.
 - **Common Errors:** Compilation and syntax errors are prevalent across most LLMs, indicating challenges in understanding code structure or syntax in code generation tasks.
