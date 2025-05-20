@@ -216,7 +216,7 @@ Detailed results comparing the test case pass ratios of various LLMs:
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="./figures/Java_Construct_v2_png_compressed.png" alt="Java Infill & Completion" style="width: 100%; height: auto;"/><br>
+      <img src="./figures/Java_Construct_v2_jpeg.jpg" alt="Java Infill & Completion" style="width: 100%; height: auto;"/><br>
       <em>Figure 5: Java Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
