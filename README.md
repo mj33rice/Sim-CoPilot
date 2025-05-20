@@ -229,7 +229,7 @@ Detailed results comparing the test case pass ratios of various LLMs:
 - Categorized by distance to the nearest referenced object: [code](helper_functions/horizon_dist.ipynb)
 
 <p align="center">
-    <img src="./figures/Pass_rate_group_by_ref_dist_w_errbar_compressed_jpeg.jpg" alt="Pass Rates by Distance to Referenced Object"/><br>
+    <img src="./figures/Pass_rate_group_by_ref_dist_w_errbar_compressed.png" alt="Pass Rates by Distance to Referenced Object"/><br>
     <em>Figure 6: Pass Rates by Distance to Referenced Object</em>
 </p>
 
@@ -239,7 +239,7 @@ Detailed results comparing the test case pass ratios of various LLMs:
 - Categorized by proximity to the nearest comments: [code](helper_functions/get_comment_dist.ipynb)
 
 <p align="center">
-  <img src="./figures/group_by_comment_dist_w_errbar_compressed_jpeg.jpg" alt="Pass Rates by Distance to Closest Comment"/><br>
+  <img src="./figures/group_by_comment_dist_w_errbar_compressed.png" alt="Pass Rates by Distance to Closest Comment"/><br>
   <em>Figure 7: Pass Rates by Distance to Closest Comment</em>
 </p>
 <!-- ![Figure 7: Pass Rates by Distance to Closest Comment](./figures/group_by_comment_dist_w_errbar_compressed_jpeg.jpg)
