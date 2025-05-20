@@ -179,13 +179,22 @@ python -m helper_functions.update_post_process_and_eval ./PATH/to/result_folder
 
 For detailed examples of code Post-Processing, please refer to the figure below:
 
-![Figure 2: Example infill task from SIMCOPILOTP and step-by-step post-processing demonstration.](figures/Python_infill_post_processing_example.png)
+<p align="center">
+  <img src="figures/Python_infill_post_processing_example.png" alt="Example infill task from SimCoPilotP and step-by-step post-processing demonstration."/><br>
+  <em>Figure 2: Example infill task from SimCoPilotP and step-by-step post-processing demonstration.</em>
+</p>
+
+<p align="center">
+  <img src="figures/Java_infill_post_processing_example.png" alt="Example completion task from SimCoPilotJ and step-by-step post-processing demonstration"/><br>
+  <em>Figure 3: Example completion task from SimCoPilotJ and step-by-step post-processing demonstration</em>
+</p>
+<!-- ![Figure 2: Example infill task from SIMCOPILOTP and step-by-step post-processing demonstration.](figures/Python_infill_post_processing_example.png)
 
 *Figure 2: Example infill task from SimCoPilotP and step-by-step post-processing demonstration.*
 
 ![Figure 3: Example infill task from SIMCOPILOTP and step-by-step post-processing demonstration.](figures/Java_infill_post_processing_example.png)
 
-*Figure 3: Example completion task from SimCoPilotJ and step-by-step post-processing demonstration*
+*Figure 3: Example completion task from SimCoPilotJ and step-by-step post-processing demonstration* -->
 
 ## 🔍 Stratified Evaluation
 Detailed results comparing the test case pass ratios of various LLMs:  
