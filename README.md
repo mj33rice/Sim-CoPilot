@@ -31,6 +31,27 @@
 <!-- The data nutrition label can be found at [Data Nutrition Label](https://github.com/mj33rice/SimCoPilot/tree/main/dataset#data-nutrition-label). -->
 - **Licensing:** The data is shared under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) and code is licensed under MIT License.
 - **Maintenance Plan:** We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. Updates will be documented in the repository's release notes section.
+
+<details>
+<summary><b>Additional Support Data</b></summary>
+
+The extended dataset and supplementary materials can be downloaded from our [Google Drive repository](https://drive.google.com/drive/folders/1FCyPWQO3cQKxtJbQIGWzaE6G4tE5cmJa?usp=sharing).
+
+**Download Instructions:**
+1. Access the Google Drive link above
+2. Download the required files
+3. Extract and place the downloaded files in `./example_code/Python/Image_Filtering/` directory
+4. Ensure the directory structure matches the expected paths in the code examples
+
+```bash
+# Create directory if it doesn't exist
+mkdir -p ./example_code/Python/Image_Filtering/
+
+# Place downloaded files in the directory
+cp /path/to/downloaded/files/* ./example_code/Python/Image_Filtering/
+```
+</details>
+
 ## 🏆 LeaderBoard
 | Model                          | Python Infill     | Python Completion    | Java Infill       | Java Completion       | HumEval |
 |--------------------------------|-------------------|----------------------|-------------------|-----------------------|--------|
@@ -46,22 +67,6 @@
 | R1-Distill-Qwen14B             | 46.9±5.0          | 38.7±6.5             | 38.9±5.7          | 39.1±5.6              | —      |
 | Qwen2.5-Coder-32B              | 70.2±4.5          | 64.7±6.4             | 63.2±5.6          | 56.3±5.7              | 92.1   |
 | Qwen-QwQ-32B                   | 52.6±5.0          | 47.2±6.7             | 51.6±5.8          | 34.3±5.4              | 97.6   |
-<!-- 
-| Model            | Python Infill | Python Completion | Java Infill | Java Completion | HumEval | MBPP |
-|------------------|---------------|-------------------|-------------|-----------------|---------|------|
-| GPT 4 Turbo      | **68.3±4.6**  | **55.6±6.6**      | **74.9±5.0**| 61.5±5.6        | **86.6**| **73.3**|
-| Claude 3 Opus    | 48.4±5.0      | 24.0±5.8          | 73.4±5.1    | **68.1±5.3**    | 77.4    | **73.3**|
-| LLaMA 3 70B      | 54.4±5.0      | 45.2±6.6          | 56.1±5.8    | 53.7±5.7        | 72.0    | 69.0 |
-| Claude 3 Sonnet  | 48.4±5.0      | 26.8±5.9          | 57.9±5.7    | 55.6±5.7        | 64.0    | 69.3 |
-| Claude 3 Haiku   | 34.5±4.7      | 27.3±5.9          | 31.1±5.3    | 48.9±5.7        | 68.9    | 68.8 |
-| GPT 3.5 Turbo    | 35.6±4.8      | 52.8±6.6          | 26.0±5.0    | 42.6±5.7        | 70.7    | 69.7 |
-| LLaMA 3 8B       | 27.7±4.4      | 31.5±6.2          | 23.6±4.8    | 26.9±5.1        | 56.7    | 59.3 |
-| DeepSeek 7B      | 11.2±3.1      | 45.3±6.6          | 5.6±2.7     | 41.9±5.7        | 71.3    | 62.2 |
-| DeepSeek 1.3B    | 8.1±2.7       | 12.2±4.3          | 5.6±2.7     | 16.0±4.2        | 60.4    | 54.8 |
-| Phi-3(4k) 3.8B   | 5.2±2.2       | 8.0±3.7           | 7.7±5.8     | 10.4±3.5        | 59.1    | 54.2 | -->
-
-<!-- When controllable and applicable, the randomness of the AI-for-code model is "turned off" so that the most likely/preferred answer is produced.
-All results in the SIMCOPILOT benchmark are presented with 95% confidence intervals. -->
 > **Note**: To ensure consistency, the AI-for-code model's randomness is minimized, aiming for the most likely/preferred outcomes. All SIMCOPILOT benchmark results are reported with 95% confidence intervals.
 ## 🚀 Getting Started
 
@@ -72,7 +77,7 @@ All results in the SIMCOPILOT benchmark are presented with 95% confidence interv
 To install the Dependency Analyzer, clone this repository and run the setup script:
 
 ```bash
-git clone https://github.com/mj33rice/SimCoPilot.git
+git clone git@github.com:mj33rice/Sim-CoPilot.git
 pip install -r requirements.txt
 ```
 
@@ -127,44 +132,27 @@ python model_inference.py <source_code_path> <test_cases_path> --gen_model <mode
 
 - `source_code_path`: Path to the Python or Java source code file. 
 - `test_cases_path`: Path to the JSON test cases file.
-- `--gen_model`: Close source model for code generation, e.g.`gpt-4-turbo`, `claude-3-opus-20240229`.
+- `--gen_model`: Close source model for code generation, e.g.`gpt-4o-2024-08-06`, `claude-3-7-sonnet-latest`.
 - `--code_gen_mode`: Specifies the code generation task type:
     - `with_afterlines`: For infilling tasks with context before and after the target code.
     - `no_afterlines`: For completion tasks, generating code to finish a block without subsequent context.
-    
-<!-- ### Open Source Models
-```python
-CUDA_VISIBLE_DEVICES=$gpu_id python -m open_source_model_gen.open_source_code_gen <source_code_path> <test_cases_path> --gen_model <model_name> --code_gen_mode <mode>
-```
-- `$gpu_id`: Specifies the ID of the GPU to use for the code generation.
-- `--gen_model`: Close source model for code generation, e.g.`deepseek-coder-1.3b-instruct`. -->
+  
 
 <details>
 <summary><b>Example Command</b></summary>
 
 Code generation script with specific parameters, you can use the following command:
-This command specifies the use of the `gpt-4-turbo`models for code generation with the mode set to `with_afterlines` indicating that the generation should consider both the preceding and following context.
+This command specifies the use of the `gpt-4o-2024-08-06`models for code generation with the mode set to `with_afterlines` indicating that the generation should consider both the preceding and following context.
 ```python
 #Specifiy Model to Run
 python model_inference.py \
 ./example_code/Python/simplex_method/simplex_method.py \
 ./example_code/Python/simplex_method/simplex_method.json \
 --read_dependency_results --update_def_line \
---gen_model gpt-4-turbo \
+--gen_model gpt-4o-2024-08-06 \
 --code_gen_mode with_afterlines
 ```
 </details> 
-
-<!-- This command specifies the use of the `deepseek-coder-1.3b-instruct` models for code generation with the mode set to `no_afterlines`, indicating that the generation should only consider both the preceding context.
-```python
-#Open Source Models
-CUDA_VISIBLE_DEVICES=0 python -m open_source_model_gen.open_source_code_gen \
-./example_code/Java/COMP215/A0/Test/FactorizationTester.java \
-./example_code/Java/COMP215/A0/Test/FactorizationTester.json \
---read_dependency_results --update_def_line \
---gen_model deepseek-coder-1.3b-instruct \
---code_gen_mode no_afterlines
-``` -->
 
 
 <details>
@@ -258,8 +246,6 @@ Detailed results comparing the test case pass ratios of various LLMs:
 
 These observations highlight that while model size often correlates with performance, specific error types reveal unique strengths and weaknesses in each model's understanding of code structure and syntax.
 
-## Support Data
-https://drive.google.com/drive/folders/1FCyPWQO3cQKxtJbQIGWzaE6G4tE5cmJa?usp=sharing
 ## 📧 Contact Us 
 
 For any inquiries or further information, please feel free to reach out to us at [mj33@rice.edu](mailto:mj33@rice.edu).
