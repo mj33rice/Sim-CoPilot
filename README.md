@@ -6,10 +6,10 @@
 ![Figure 1: Workflow for each of the 1,163 programming tasks in SIMCOPILOT.](figures/Workflow.png)
 🤔*Question: Can an AI tool correctly complete code snippets like `method body`, `if-statements`, or `for-loops` from real-world projects?*
 
-
+**SimCoPilot Demo**
 <p align="center">
   <img src="./figures/SimCoPilot_hd.gif" alt="SimCoPilot Demo"/><br>
-  <em>Figure 2: SimCoPilot Demo</em>
+  <!-- <em>Figure 2: SimCoPilot Demo</em> -->
 </p>
 <!-- **SimCoPilot Demo**
 ![Figure 2: SimCoPilot Demo](./figures/SimCoPilot_hd.gif) -->
@@ -188,6 +188,7 @@ For detailed examples of code Post-Processing, please refer to the figure below:
   <img src="figures/Java_infill_post_processing_example.png" alt="Example completion task from SimCoPilotJ and step-by-step post-processing demonstration"/><br>
   <em>Figure 3: Example completion task from SimCoPilotJ and step-by-step post-processing demonstration</em>
 </p>
+
 <!-- ![Figure 2: Example infill task from SIMCOPILOTP and step-by-step post-processing demonstration.](figures/Python_infill_post_processing_example.png)
 
 *Figure 2: Example infill task from SimCoPilotP and step-by-step post-processing demonstration.*
@@ -205,6 +206,7 @@ Detailed results comparing the test case pass ratios of various LLMs:
 
 ![Figure 5: Java Infill & Completion - Pass Rates by Program Constructs](./figures/Java_Construct_v2_jpeg.jpg)
 *Figure 5: Java Infill & Completion - Pass Rates by Program Constructs* -->
+
 <table>
   <tr>
     <td align="center" colspan="2">
@@ -220,8 +222,8 @@ Detailed results comparing the test case pass ratios of various LLMs:
   </tr>
 </table>
 
-<!-- <p align="center">
-  <em>Pass Rates by Program Constructs</em>
+<p align="center">
+  <!-- <em>Pass Rates by Program Constructs</em> -->
 </p>
 
 - Categorized by distance to the nearest referenced object: [code](helper_functions/horizon_dist.ipynb)
