@@ -26,8 +26,8 @@
 <!-- The data for this project can be found in the ` dataset/SimCoPilot.csv.zip` file.  -->
 
 **Hosting, Licensing, and Maintenance Plan.**
-- **Dataset and Metadata Access.** The data for this project can be found in the `dataset/SimCoPilot.csv.zip` file. We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. The dataset and its associated metadata, nutrition labels, documented using the Croissant metadata framework will be released.
-<!-- - **Dataset and Metadata Access.** The dataset and its associated metadata, documented using the Croissant metadata framework, can be viewed and downloaded at [Huggingface Datasets:SimCoPilot](https://huggingface.co/datasets/mj33/SimCoPilot). -->
+<!-- - **Dataset and Metadata Access.** The data for this project can be found in the `dataset/SimCoPilot.csv.zip` file. We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. The dataset and its associated metadata, nutrition labels, documented using the Croissant metadata framework will be released. -->
+- **Dataset and Metadata Access.** The dataset and its associated metadata, documented using the Croissant metadata framework, can be viewed and downloaded at [Huggingface Datasets:SimCoPilot](https://huggingface.co/datasets/mj33/SimCoPilot).
 <!-- The data nutrition label can be found at [Data Nutrition Label](https://github.com/mj33rice/SimCoPilot/tree/main/dataset#data-nutrition-label). -->
 - **Licensing:** The data is shared under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) and code is licensed under MIT License.
 - **Maintenance Plan:** We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. Updates will be documented in the repository's release notes section.
