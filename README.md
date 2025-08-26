@@ -1,4 +1,4 @@
-# SimCoPilot: Evaluating Models for Co-pilot-Style Code Generation
+# Large Language Models for Copilot-Style Code Generation: An Evaluation Study
 **SimCoPilot** is a benchmark with:
 - **Purpose**: Evaluate LLMs as interactive coding assistants in "copilot"-style.
 - **Focus**: Test AI's ability to integrate and complete code in complex software environments.
@@ -29,7 +29,7 @@
 <!-- - **Dataset and Metadata Access.** The data for this project can be found in the `dataset/SimCoPilot.csv.zip` file. We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. The dataset and its associated metadata, nutrition labels, documented using the Croissant metadata framework will be released. -->
 - **Dataset and Metadata Access.** The dataset and its associated metadata, documented using the Croissant metadata framework, can be viewed and downloaded at [Huggingface Datasets:SimCoPilot](https://huggingface.co/datasets/mj33/SimCoPilot).
 <!-- The data nutrition label can be found at [Data Nutrition Label](https://github.com/mj33rice/SimCoPilot/tree/main/dataset#data-nutrition-label). -->
-- **Licensing:** The data is shared under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) and code is licensed under MIT License.
+- **Licensing:** The data is shared under the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) and code is licensed under MIT License.
 - **Maintenance Plan:** We commit to maintaining the dataset with regular updates and revisions to correct any issues and integrate new contributions. Updates will be documented in the repository's release notes section.
 
 <details>
@@ -210,13 +210,13 @@ Detailed results comparing the test case pass ratios of various LLMs:
 <table>
   <tr>
     <td align="center" colspan="2">
-      <img src="./figures/Python_Construct_v2_jpeg.jpg" alt="Python Infill & Completion" style="width: 100%; height: auto;"/><br>
+      <img src="./figures/Python_Construct_100.png" alt="Python Infill & Completion" style="width: 100%; height: auto;"/><br>
       <em>Figure 4: Python Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="./figures/Java_Construct_v2_jpeg.jpg" alt="Java Infill & Completion" style="width: 100%; height: auto;"/><br>
+      <img src="./figures/Java_Construct_100.png" alt="Java Infill & Completion" style="width: 100%; height: auto;"/><br>
       <em>Figure 5: Java Infill & Completion - Pass Rates by Program Constructs</em>
     </td>
   </tr>
@@ -264,4 +264,4 @@ For any inquiries or further information, please feel free to reach out to us at
 
 ## License
 
-The data is shared under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) and code is licensed under MIT License.
+The data is shared under the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) and code is licensed under MIT License.
