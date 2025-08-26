@@ -1,4 +1,4 @@
-# Large Language Models for Copilot-Style Code Generation: An Evaluation Study
+# SIMCOPILOT: Evaluating Large Language Models for Copilot-Style Code Generation
 **SimCoPilot** is a benchmark with:
 - **Purpose**: Evaluate LLMs as interactive coding assistants in "copilot"-style.
 - **Focus**: Test AI's ability to integrate and complete code in complex software environments.
