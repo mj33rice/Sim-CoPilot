@@ -262,6 +262,19 @@ These observations highlight that while model size often correlates with perform
 
 For any inquiries or further information, please feel free to reach out to us at [mj33@rice.edu](mailto:mj33@rice.edu).
 
+## 📄 Citation
+
+For more details, welcome to check the paper: [https://arxiv.org/abs/2505.21514](https://arxiv.org/abs/2505.21514)
+
+```bibtex
+@article{jiang2025simcopilot,
+  title={SIMCOPILOT: Evaluating Large Language Models for Copilot-Style Code Generation},
+  author={Jiang, Mingchao and Jain, Abhinav and Zorek, Sophia and Jermaine, Chris},
+  journal={arXiv preprint arXiv:2505.21514},
+  year={2025}
+}
+```
+
 ## License
 
 The data is shared under the [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) and code is licensed under MIT License.
